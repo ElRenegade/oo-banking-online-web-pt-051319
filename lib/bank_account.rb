@@ -12,8 +12,8 @@ class BankAccount
     self.balance += amount
   end
 
-  def method_name
-    self.balance
+  def display_balance
+    "Your balance is $#{self.balance}."
   end
 
   def valid?
