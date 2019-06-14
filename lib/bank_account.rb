@@ -13,7 +13,18 @@ class BankAccount
   end
 
   def method_name
-
+    self.balance
   end
 
+  def valid?
+    if self.balance > 0 && slef.status == "open"
+      return true
+    else
+      return false
+    end
+  end
+
+  def close_account
+    self.status = "closed"
+  end
 end
