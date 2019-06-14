@@ -30,8 +30,8 @@ def reverse_transfer
   if self.status == "complete"
     receiver.balance -= amount
     sender.deposit(amount)
-    self.status = "reveresed"
-  elsif self.status == "reveresed"
+    self.status = "reversed"
+  elsif self.status == "reversed"
     "trasnfer has already been reveresed."
   end
 end
