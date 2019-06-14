@@ -22,5 +22,6 @@ class Transfer
       receiver.deposit(amount)
       status = "complete"
   end
+end
 
 end
