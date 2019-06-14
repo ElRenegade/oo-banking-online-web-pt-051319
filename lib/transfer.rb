@@ -7,4 +7,9 @@ class Transfer
     @status = "pending"
     @amount = amount
   end
+
+  def valid?(account1,account2)
+    account1.valid?
+    account2.valid?
+  end
 end
